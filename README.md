@@ -11,3 +11,5 @@ Clone this repository then:
     docker build -t ffmpeg-shadertoy .
     docker run -ti -v $(pwd):/data ffmpeg-shadertoy /bin/bash
     xvfb-run ./ffmpeg -i /data/input.mp4 -vf "shadertoy=example/shader.glsl" -c:v libx264 -preset slow -crf 25 -f mp4 -c:a copy -y /data/output.mp4
+
+Try out other shaders from [Shadertoy](https://www.shadertoy.com/), experiment and enjoy!
